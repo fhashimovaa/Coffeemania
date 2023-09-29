@@ -1,0 +1,296 @@
+body {
+    background-image: url("./../image/background_img.jpg");
+
+}
+
+body ::selection {
+    background-color: $brown;
+    color: white;
+}
+
+main {
+    .cover {
+        height: 700px;
+        position: relative;
+        text-align: center;
+        margin-top: 20px;
+
+
+
+        &__title {
+
+            & p {
+                font-size: $very-large;
+                color: $dark-brown;
+
+            }
+
+        }
+
+        &__details {
+
+            & span {
+                padding-top: 10px;
+                display: inline-block;
+            }
+
+
+
+        }
+
+        &__bean {
+            // position: absolute;
+            // left: 0px;
+            float: left;
+            filter: drop-shadow(20px 10px 4px black);
+        }
+
+        &__glass {
+            // position: absolute;
+            // right: 0px;
+            float: right;
+        }
+    }
+
+    .about {
+        &__title {
+            & p {
+                text-align: center;
+                color: $dark-brown;
+                font-size: $large;
+            }
+        }
+
+        &__head {
+            background-image: url("./../image/about-background.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            height: 400px;
+            filter: grayscale(20%);
+            margin-top: 50px;
+
+            &-content {
+                color: $light-brown;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+
+
+                & p {
+                    font-size: $big;
+                    text-align: center;
+                    font-weight: bold;
+                }
+
+                & span {
+                    text-align: center;
+                    display: block;
+                }
+            }
+        }
+
+        &__content {
+            padding-top: 30px;
+
+            & p {
+                margin-bottom: 15px;
+                color: $dark-brown;
+
+                & a {
+                    text-decoration: underline;
+                    color: $dark-brown;
+                }
+
+            }
+        }
+    }
+
+    .menu {
+        margin-top: 70px;
+
+
+        &__title {
+            text-align: center;
+            color: $dark-brown;
+            font-size: $large;
+            margin-bottom: 30px;
+        }
+
+        &__head {
+            background-image: url("./../image/menu-title.jpg");
+            background-repeat: no-repeat;
+            background-position: top;
+            background-attachment: fixed;
+            height: 400px;
+
+        }
+
+        &__content {
+
+            &-hot {
+                background-color: white;
+                padding-top: 50px;
+
+                &-title {
+                    text-align: center;
+                    color: $dark-brown;
+                    font-size: $large;
+
+                    & span {
+                        font-size: $big;
+                        display: block;
+                        padding-top: 15px;
+                    }
+                }
+
+                &-coffee {
+                    padding: 10px 10px 10px 20px;
+                    text-align: center;
+                    
+
+                    & img {
+                        width: 50px;
+                        border-radius: 50%;
+                    }
+
+                    & div {
+                        font-size: $big;
+                        padding-left: 20px;
+
+                    }
+
+                    & span {
+                        font-size: $medium;
+                        // padding-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact {
+        margin-top: 70px;
+
+        &__title {
+            text-align: center;
+            color: $dark-brown;
+            font-size: $large;
+            margin-bottom: 30px;
+        }
+
+        &__head {
+            background-image: url("./../image/contact-image.jpg");
+            background-repeat: no-repeat;
+            background-position: top;
+            background-attachment: fixed;
+            height: 400px;
+        }
+
+        &__content {
+            background-color: white;
+            padding-top: 30px;
+
+            &-info {
+
+                & p {
+                    text-align: center;
+                    font-size: $big;
+                    color: $dark-brown;
+                }
+
+                & form {
+
+
+                    & input {
+                        display: block;
+                        margin: 0 auto;
+                        width: 50%;
+                        margin-top: 20px;
+                        padding: 10px 15px;
+
+                    }
+
+                    & textarea {
+                        display: block;
+                        margin: 0 auto;
+                        width: 50%;
+                        height: 150px;
+                        margin-top: 20px;
+
+                    }
+
+                    & button {
+                        display: block;
+                        margin: 0 auto;
+                        margin-top: 20px;
+                        padding: 15px;
+                        background-color: $light-brown;
+                        color: white;
+                        border: none;
+                        transition: 0.7s;
+                    }
+
+                    & button:hover {
+                        background-color: $dark-brown;
+                        transition: 0.7s;
+                    }
+
+                }
+            }
+
+            &-details {
+                padding: 50px 0px;
+
+
+                & h5,
+                p {
+                    color: $brown;
+                    padding-bottom: 10px;
+                }
+
+                & a {
+                    color: $brown;
+                    font-size: $large;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+
+    .location {
+        margin-top: 70px;
+
+        &__title {
+            text-align: center;
+            color: $dark-brown;
+            font-size: $large;
+            margin-bottom: 30px;
+        }
+
+        &__head {
+            background-image: url("./../image/locations-image.jpg");
+            background-repeat: no-repeat;
+            background-position: top;
+            background-attachment: fixed;
+            height: 400px;
+        }
+
+        &__content {
+            padding: 30px 0px;
+
+            & iframe {
+                filter: grayscale(100%);
+
+            }
+
+            &-detalis {
+                padding-top: 30px;
+                color: $dark-brown;
+            }
+
+        }
+    }
+}

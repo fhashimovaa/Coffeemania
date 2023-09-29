@@ -1,0 +1,96 @@
+ .header {
+     position: sticky;
+     top: 0px;
+     z-index: 9999;
+
+
+     &__content {
+         @include flexbox;
+         padding-top: 10px;
+         // display: none;
+
+
+
+         &-logo {
+             & img {
+                 width: 120px;
+
+             }
+         }
+
+         &-nav {
+             @include flexbox;
+
+             // display: none;
+             & a {
+                 padding: 12px;
+                 display: inline-block;
+                 margin-left: 10px;
+                 color: $brown;
+
+
+
+             }
+
+             & a:hover {
+                 border-bottom: 2px solid $brown;
+
+
+             }
+         }
+     }
+
+     &__aside {
+         // @include flexbox ;
+
+         padding-top: 10px;
+         display: none;
+
+
+         & a {
+             color: $brown;
+             font-size: $medium;
+         }
+
+
+         &-logo {
+             width: 120px;
+             float: right;
+         }
+
+     }
+
+     &__nav {
+         position: absolute;
+         position: fixed;
+         top: 0px;
+         left: 0px;
+         width: 300px;
+         height: 750px;
+         background-color: white;
+         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+         display: none;
+
+         & a {
+             color: $brown;
+             display: inline-block;
+             margin-bottom: 10px;
+             padding: 20px;
+             width: 100%;
+             font-size: $big;
+
+         }
+
+         & a:hover {
+             background-color: $light-brown;
+         }
+         & img{
+            display: block;
+            margin: 0 auto;
+            padding: 20px 0px 10px 0px;
+         }
+
+
+     }
+
+ }
